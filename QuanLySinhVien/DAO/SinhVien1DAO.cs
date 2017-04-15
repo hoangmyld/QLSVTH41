@@ -37,19 +37,99 @@ namespace DAO
                     facity = dr.GetString(7);
                     SinhVien sv = new SinhVien(id, LName, FName, phone, address, sex, email, facity);
                     list.Add(sv);
+
                 }
                 return list;
             }
             catch (SqlException ex)
             {
-              
+
                 throw ex;
             }
             finally
             {
                 dp.disCon();
             }
+        }
+        public int ThemSV(SinhVien SV)
+        {
+            List<SqlParameter> list = new List<SqlParameter>();
+            list.Add(new SqlParameter("@masv", SV.MaSV));
+            list.Add(new SqlParameter("@ho", SV.Ho));
+            list.Add(new SqlParameter("@ten", SV.Ten));
+            list.Add(new SqlParameter("@sdt", SV.SDT));
+            list.Add(new SqlParameter("@diachi", SV.DiaChi));
+            list.Add(new SqlParameter("@gioitinh", SV.GioiTinh));
+            list.Add(new SqlParameter("@email", SV.Email));
+            list.Add(new SqlParameter("@manganh", SV.MaNganh));
+            list.Add(new SqlParameter("@hinh", SV.HinhSV));
+           
 
+            try
+            {
+                return (dp.ExcuteNonquery("Them", System.Data.CommandType.StoredProcedure, list));
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+        //public int XoaSV(int id)
+        //{
+         
+         
+        //    try
+        //    {
+        //        //string sql = String.Format("delete from SinhVien where MaSV = {0}", id);
+        //        string sql = "delete from SinhVien where MaSV = " + id.ToString();
+        //        return dp.ExcuteNonquery(sql, CommandType.Text, null);
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        throw ex;
+        //    }
+            
+
+
+        //}
+        public int XoaSV(int id)
+        {
+
+
+            try
+            {
+                dp.Con();
+                //string sql = String.Format("delete from SinhVien where MaSV = {0}", id);
+                string sql = "delete from SinhVien where MaSV = " + id;
+                return dp.ExecTest(sql);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+        public int SuaSV(SinhVien SV)
+        {
+            List<SqlParameter> list = new List<SqlParameter>();
+            list.Add(new SqlParameter("@masv", SV.MaSV));
+            list.Add(new SqlParameter("@ho", SV.Ho));
+            list.Add(new SqlParameter("@ten", SV.Ten));
+            list.Add(new SqlParameter("@sdt", SV.SDT));
+            list.Add(new SqlParameter("@diachi", SV.DiaChi));
+            list.Add(new SqlParameter("@gioitinh", SV.GioiTinh));
+            list.Add(new SqlParameter("@email", SV.Email));
+            list.Add(new SqlParameter("@manganh", SV.MaNganh));
+            list.Add(new SqlParameter("@hinh", SV.HinhSV));
+            try
+            {
+                return (dp.ExcuteNonquery("Sua", System.Data.CommandType.StoredProcedure, list));
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
         }
     }
 }

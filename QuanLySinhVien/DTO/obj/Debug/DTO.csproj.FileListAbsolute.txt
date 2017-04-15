@@ -10,4 +10,9 @@ C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DTO\obj\Debug\DTO.Properties.Reso
 C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
 C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DTO\obj\Debug\DTO.dll
 C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DTO\obj\Debug\DTO.pdb
-C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\sky\Desktop\QuanLySinhVien\BIN\DTO.dll
+C:\Users\sky\Desktop\QuanLySinhVien\BIN\DTO.pdb
+C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.dll
+C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.pdb

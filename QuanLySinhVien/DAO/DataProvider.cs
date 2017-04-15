@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
-
+using DTO;
+using System.Data;
 namespace DAO
 {
     public class DataProvider
@@ -17,7 +18,7 @@ namespace DAO
             str = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
             cn = new SqlConnection(str);
         }
-        private void Con()
+public void Con()
         {
             try
             {
@@ -62,5 +63,44 @@ namespace DAO
             }
             
         }
+        public int ExcuteNonquery (string sql, CommandType type , List<SqlParameter> paras)
+        {
+            Con();
+            try 
+	        {	        
+		          SqlCommand cm = new SqlCommand (sql,cn);
+                  cm.CommandType = type;
+                if(paras != null)
+                    foreach (SqlParameter para in paras)
+                    {
+                        cm.Parameters.Add(para);
+                    }
+             
+                  cm.ExecuteNonQuery();
+                  return 1;
+            }
+	        catch (Exception ex)
+	        {
+		
+		        throw ex;
+	        }
+            finally
+            {
+                disCon();
+            }             
+        }
+      public  int ExecTest(string sql)
+        {
+            Con();
+            SqlCommand cm = new SqlCommand(sql,cn);
+            cm.CommandType = CommandType.Text;
+            cm.ExecuteNonQuery();
+            disCon();
+            return 1;
+          
+
+        }
+
     }
 }
+
