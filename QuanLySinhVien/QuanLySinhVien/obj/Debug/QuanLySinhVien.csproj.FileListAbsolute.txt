@@ -1,0 +1,36 @@
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojResolveAssemblyReference.cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmLogin.resources
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmView.resources
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\BUS.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\DTO.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\DAO.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\BUS.pdb
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\DTO.pdb
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\bin\Debug\DAO.pdb
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\BUS.dll
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\DTO.dll
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\DAO.dll
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\BUS.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\DTO.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\bin\Debug\DAO.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojResolveAssemblyReference.cache
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmAdmin.resources
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmLogin.resources
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmView.resources
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
+G:\Downloads\Compressed\QuanLySV-master_3\QuanLySV-master\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+G:\Downloads\Compressed\QuanLySV-master_3\QuanLySV-master\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+G:\Downloads\Compressed\QuanLySV-master_3\QuanLySV-master\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb

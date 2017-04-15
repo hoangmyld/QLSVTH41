@@ -1,0 +1,14 @@
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BIN\BUS.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BIN\BUS.pdb
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BUS\obj\Debug\BUS.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BUS\obj\Debug\BUS.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BIN\BUS.dll
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BIN\BUS.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BUS\obj\Debug\BUS.dll
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BUS\obj\Debug\BUS.pdb

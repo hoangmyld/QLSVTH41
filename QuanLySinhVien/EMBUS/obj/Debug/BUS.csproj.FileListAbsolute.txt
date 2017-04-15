@@ -1,0 +1,7 @@
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BIN\EMBUS.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BIN\EMBUS.pdb
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\EMBUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\EMBUS\obj\Debug\EMBUS.Properties.Resources.resources
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\EMBUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\EMBUS\obj\Debug\EMBUS.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\EMBUS\obj\Debug\EMBUS.pdb

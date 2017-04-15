@@ -1,0 +1,14 @@
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BIN\DAO.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\BIN\DAO.pdb
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\DAO\obj\Debug\DAO.dll
+C:\Users\Nobuyuki\Desktop\Bài tập lớn\QuanLySinhVien\DAO\obj\Debug\DAO.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BIN\DAO.dll
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\BIN\DAO.pdb
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.dll
+C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.pdb
