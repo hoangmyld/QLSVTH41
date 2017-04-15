@@ -47,8 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LopHocBus.cs" />
+    <Compile Include="MonHocBus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SinVien1BUS.cs" />
+    <Compile Include="SinhVien1BUS.cs" />
+    <Compile Include="SV_LHBus.cs" />
+    <Compile Include="SV_MHBus.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
