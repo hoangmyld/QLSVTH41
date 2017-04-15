@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
 
+using System.Data;
+
 namespace DAO
 {
     public class DataProvider
@@ -28,7 +30,7 @@ namespace DAO
             }
             catch (SqlException ex)
             {
-                
+
                 throw ex;
             }
         }
@@ -57,10 +59,36 @@ namespace DAO
             }
             catch (SqlException ex)
             {
-                
+
                 throw ex;
             }
-            
+
+        }
+        public int ExecLogin(string sql, CommandType type, List<SqlParameter> paras)
+        {
+            Con();
+            try
+            {
+                SqlCommand cm = new SqlCommand(sql, cn);
+                cm.CommandType = type;
+                if (paras != null)
+                {
+                    foreach (SqlParameter para in paras)
+                    {
+                        cm.Parameters.Add(para);
+
+                    }
+                }
+                cm.ExecuteNonQuery();
+                return int.Parse(cm.Parameters["@KetQua"].Value.ToString());
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
         }
     }
 }

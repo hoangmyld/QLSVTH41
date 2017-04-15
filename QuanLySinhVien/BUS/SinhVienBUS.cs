@@ -10,7 +10,7 @@ using DAO;
 
 namespace BUS
 {
-    public class SinVien1BUS
+    public class SinhVienBUS
     {
         public List<SinhVien> getStudent1(string sql)
         {

@@ -25,7 +25,7 @@ namespace QuanLySinhVien
             try
             {
                 string sql = "select * from SinhVien";
-                SinVien1BUS sv = new SinVien1BUS();
+                SinhVienBUS sv = new SinhVienBUS();
                 return sv.getStudent1(sql);
             }
             catch (Exception ex)

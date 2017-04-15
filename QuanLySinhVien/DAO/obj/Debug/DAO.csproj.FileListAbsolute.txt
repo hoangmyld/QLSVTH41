@@ -12,3 +12,10 @@ C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.Reso
 C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
 C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.dll
 C:\Users\Nobuyuki\Desktop\btLon\QuanLySinhVien\DAO\obj\Debug\DAO.pdb
+C:\Users\TjeuBao\Desktop\QuanLiSV\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\TjeuBao\Desktop\QuanLiSV\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\TjeuBao\Desktop\QuanLiSV\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\TjeuBao\Desktop\QuanLiSV\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.dll
+C:\Users\TjeuBao\Desktop\QuanLiSV\QLSVTH41\QuanLySinhVien\BIN\DAO.dll
+C:\Users\TjeuBao\Desktop\QuanLiSV\QLSVTH41\QuanLySinhVien\BIN\DAO.pdb
+C:\Users\TjeuBao\Desktop\QuanLiSV\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.pdb
