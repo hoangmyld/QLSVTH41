@@ -19,3 +19,10 @@ C:\Users\sky\Desktop\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.Resources.resou
 C:\Users\sky\Desktop\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
 C:\Users\sky\Desktop\QuanLySinhVien\DAO\obj\Debug\DAO.dll
 C:\Users\sky\Desktop\QuanLySinhVien\DAO\obj\Debug\DAO.pdb
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BIN\DAO.dll
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BIN\DAO.pdb
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.dll
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.pdb

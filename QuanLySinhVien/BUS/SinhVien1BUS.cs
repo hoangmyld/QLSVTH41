@@ -64,5 +64,17 @@ namespace BUS
             }
           
         }
+        public SinhVien getAStudent(string sql)
+        {
+            try
+            {
+                return new SinhVien1DAO().getAStudent(sql);
+            }
+            catch (SqlException ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

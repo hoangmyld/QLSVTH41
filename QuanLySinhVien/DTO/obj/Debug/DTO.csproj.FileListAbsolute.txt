@@ -16,3 +16,10 @@ C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.Properties.Resources.resou
 C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
 C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.dll
 C:\Users\sky\Desktop\QuanLySinhVien\DTO\obj\Debug\DTO.pdb
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BIN\DTO.dll
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BIN\DTO.pdb
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.dll
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.pdb
