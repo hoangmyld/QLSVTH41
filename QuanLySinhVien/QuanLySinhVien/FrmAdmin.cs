@@ -13,6 +13,7 @@ using DTO;
 using BUS;
 using System.IO;
 
+
 namespace QuanLySinhVien
 {
     public partial class FrmAdmin : Form
@@ -21,6 +22,28 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+        public List<Chuyennganh> getchuyennganh()
+        {
+            try
+            {
+                string sql = "select * from ChuyenNganh";
+                ChuyennganhBUS cn = new ChuyennganhBUS();
+                return cn.getchuyennganh(sql);
+                }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
+        public void loadCN()
+        {
+            dgvcn.DataSource = getchuyennganh();
+
+        }
+
 
         public List<SV_LH> GetSV_LH()
         {
@@ -125,6 +148,7 @@ namespace QuanLySinhVien
             loadLH();
             loadSV_MH();
             loadSV_LH();
+            loadCN();
         }
 
 
@@ -540,6 +564,68 @@ namespace QuanLySinhVien
             dgvSV_LH.DataSource = GetSV_LH();
         }
 
+        private void btaddcn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string manganh, tennganh;
+                manganh = txtmnganh.Text;
+                tennganh = txttennganh.Text;
+                Chuyennganh cn = new Chuyennganh(manganh, tennganh);
+                int i = new ChuyennganhBUS().Addchuyennganh(cn);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            txtmnganh.Clear();
+            txttennganh.Clear();
+            loadCN();
+        }
+
+        private void btxoacn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string manganh = txtmnganh.Text.Trim();
+                int i = new ChuyennganhBUS().xoachuyennganh(manganh);
+                txtmnganh.Clear();
+                txttennganh.Clear();
+                loadCN();
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+        }
+
+        private void s_Click(object sender, EventArgs e)
+        {
+            string macn, tencn;
+            macn = txtmnganh.Text;
+            tencn = txttennganh.Text;
+            Chuyennganh cn = new Chuyennganh(macn, tencn);
+            try
+            {
+                int i = new ChuyennganhBUS().Suachuyennganh(cn);
+                if (i == -2)
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            dgvcn.DataSource = getchuyennganh();
+            txtmnganh.Clear();
+            txttennganh.Clear();
+            loadCN();
+        }
+      
  
     } 
        

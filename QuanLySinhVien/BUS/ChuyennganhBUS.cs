@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using DAO;
 using DTO;
 namespace BUS
 {
-    public class SV_LHBus
+    public class ChuyennganhBUS
     {
-        public List<SV_LH> GetSV_LH(string sql)
+        public List<Chuyennganh> getchuyennganh(string sql)
         {
             try
             {
-                return new SV_LHDAO().GetSV_LH(sql);
+                return new ChuyennganhDAO().getchuyennganh(sql);
             }
             catch (Exception ex)
             {
@@ -22,53 +21,44 @@ namespace BUS
                 throw ex;
             }
         }
-        public int ThemSV_LH(SV_LH SV_LH)
+        public int Addchuyennganh(Chuyennganh cn)
         {
             try
             {
-                return new SV_LHDAO().ThemSV_LH(SV_LH);
+                return new ChuyennganhDAO().addchuyennganh(cn);
             }
             catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-        public int SuaSV_LH(SV_LH SV_LH)
-        {
-            try
-            {
-                return new SV_LHDAO().SuaSV_LH(SV_LH);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-        public int XoaSV_LH(int id,string id2)
-        {
-            try
-            {
-                return new SV_LHDAO().XoaSV_LH(id,id2);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-        public SV_LH get1diemhocki(string sql)
-        {
-            try
-            {
-                return new SV_LHDAO().get1diemhocki(sql);
-            }
-            catch (SqlException ex)
             {
                 
                 throw ex;
             }
+            
+        }
+        public int xoachuyennganh(string manganh)
+        {
+            try
+            {
+                return new ChuyennganhDAO().xoachuyennganh(manganh);
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+         
+        }
+        public int Suachuyennganh(Chuyennganh cn)
+        {
+            try
+            {
+                return new ChuyennganhDAO().Suachuyennganh(cn);
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+
 
         }
     }

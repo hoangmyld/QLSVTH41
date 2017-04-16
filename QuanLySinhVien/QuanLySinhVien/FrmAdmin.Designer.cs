@@ -126,6 +126,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.txttennganh = new System.Windows.Forms.TextBox();
+            this.txtmnganh = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.btsuacn = new System.Windows.Forms.Button();
+            this.btxoacn = new System.Windows.Forms.Button();
+            this.btaddcn = new System.Windows.Forms.Button();
+            this.dgvcn = new System.Windows.Forms.DataGridView();
             this.QLMH.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -142,6 +151,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSV_LH)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcn)).BeginInit();
             this.SuspendLayout();
             // 
             // QLMH
@@ -1135,6 +1146,15 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.label41);
+            this.tabPage8.Controls.Add(this.label40);
+            this.tabPage8.Controls.Add(this.txttennganh);
+            this.tabPage8.Controls.Add(this.txtmnganh);
+            this.tabPage8.Controls.Add(this.label39);
+            this.tabPage8.Controls.Add(this.btsuacn);
+            this.tabPage8.Controls.Add(this.btxoacn);
+            this.tabPage8.Controls.Add(this.btaddcn);
+            this.tabPage8.Controls.Add(this.dgvcn);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
@@ -1142,6 +1162,94 @@
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "QL_Mã Ngành";
             this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(159, 57);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(112, 24);
+            this.label41.TabIndex = 8;
+            this.label41.Text = "Tên ngành";
+            // 
+            // label40
+            // 
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(7, 57);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(111, 35);
+            this.label40.TabIndex = 7;
+            this.label40.Text = "Mã ngành";
+            // 
+            // txttennganh
+            // 
+            this.txttennganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttennganh.Location = new System.Drawing.Point(163, 104);
+            this.txttennganh.Multiline = true;
+            this.txttennganh.Name = "txttennganh";
+            this.txttennganh.Size = new System.Drawing.Size(83, 26);
+            this.txttennganh.TabIndex = 6;
+            // 
+            // txtmnganh
+            // 
+            this.txtmnganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmnganh.Location = new System.Drawing.Point(11, 105);
+            this.txtmnganh.Multiline = true;
+            this.txtmnganh.Name = "txtmnganh";
+            this.txtmnganh.Size = new System.Drawing.Size(81, 25);
+            this.txtmnganh.TabIndex = 5;
+            // 
+            // label39
+            // 
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label39.Location = new System.Drawing.Point(235, 3);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(282, 42);
+            this.label39.TabIndex = 4;
+            this.label39.Text = "Quản Lý Mã Ngành";
+            // 
+            // btsuacn
+            // 
+            this.btsuacn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btsuacn.Location = new System.Drawing.Point(353, 217);
+            this.btsuacn.Name = "btsuacn";
+            this.btsuacn.Size = new System.Drawing.Size(120, 40);
+            this.btsuacn.TabIndex = 3;
+            this.btsuacn.Text = "Sửa";
+            this.btsuacn.UseVisualStyleBackColor = true;
+            this.btsuacn.Click += new System.EventHandler(this.s_Click);
+            // 
+            // btxoacn
+            // 
+            this.btxoacn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btxoacn.Location = new System.Drawing.Point(353, 293);
+            this.btxoacn.Name = "btxoacn";
+            this.btxoacn.Size = new System.Drawing.Size(120, 40);
+            this.btxoacn.TabIndex = 2;
+            this.btxoacn.Text = "Xóa";
+            this.btxoacn.UseVisualStyleBackColor = true;
+            this.btxoacn.Click += new System.EventHandler(this.btxoacn_Click);
+            // 
+            // btaddcn
+            // 
+            this.btaddcn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btaddcn.Location = new System.Drawing.Point(353, 145);
+            this.btaddcn.Name = "btaddcn";
+            this.btaddcn.Size = new System.Drawing.Size(120, 40);
+            this.btaddcn.TabIndex = 1;
+            this.btaddcn.Text = "Thêm ";
+            this.btaddcn.UseVisualStyleBackColor = true;
+            this.btaddcn.Click += new System.EventHandler(this.btaddcn_Click);
+            // 
+            // dgvcn
+            // 
+            this.dgvcn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcn.Location = new System.Drawing.Point(0, 145);
+            this.dgvcn.Name = "dgvcn";
+            this.dgvcn.Size = new System.Drawing.Size(313, 330);
+            this.dgvcn.TabIndex = 0;
             // 
             // FrmAdmin
             // 
@@ -1175,6 +1283,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSV_LH)).EndInit();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvcn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1279,6 +1390,15 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.DataGridView dgvcn;
+        private System.Windows.Forms.Button btsuacn;
+        private System.Windows.Forms.Button btxoacn;
+        private System.Windows.Forms.Button btaddcn;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox txttennganh;
+        private System.Windows.Forms.TextBox txtmnganh;
+        private System.Windows.Forms.Label label39;
 
 
     }
