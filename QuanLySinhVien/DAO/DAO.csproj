@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChuyennganhDAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="LopHocDao.cs" />
     <Compile Include="MonHocDao.cs" />

@@ -79,7 +79,7 @@ namespace DAO
                 throw ex;
             }
         }
-        public int XoaSV_LH(int id ,string id1)
+        public int XoaSV_LH(int id, string id1)
         {
             List<SqlParameter> list = new List<SqlParameter>();
             list.Add(new SqlParameter("@masv", id));
@@ -94,6 +94,39 @@ namespace DAO
 
                 throw ex;
             }
+
+        }
+        public SV_LH get1diemhocki(string sql)
+        {
+            try
+            {
+                SqlDataReader dr = dp.ExecReader(sql);
+
+                int masv;
+                string malh;
+                double diemgk, diemck;
+                SV_LH svlh;
+                dr.Read();
+                {
+                    masv = dr.GetInt32(0);
+                    malh = dr.GetString(1);
+                    diemgk = dr.GetDouble(2);
+                    diemck = dr.GetDouble(3);
+                    svlh = new SV_LH(masv, malh, diemgk, diemck);
+
+                    return svlh;
+                }
+            }
+            catch (SqlException ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                dp.disCon();
+            }
         }
     }
 }
+    

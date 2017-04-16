@@ -131,5 +131,37 @@ namespace DAO
                 throw ex;
             }
         }
+        public SinhVien getAStudent(string sql)
+        {
+            try
+            {
+                SqlDataReader dr = dp.ExecReader(sql);
+                
+                int id;
+                string LName, FName, phone, address, sex, email, facity;
+                SinhVien sv;
+                dr.Read();                
+                    id = dr.GetInt32(0);
+                    LName = dr.GetString(1);
+                    FName = dr.GetString(2);
+                    phone = dr.GetString(3);
+                    address = dr.GetString(4);
+                    sex = dr.GetString(5);
+                    email = dr.GetString(6);
+                    facity = dr.GetString(7);                  
+                    sv = new SinhVien(id, LName, FName, phone, address, sex, email, facity);
+                
+                return sv;
+            }
+            catch (SqlException ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                dp.disCon();
+            }
+        }
     }
 }

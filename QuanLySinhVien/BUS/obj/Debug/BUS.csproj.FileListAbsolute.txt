@@ -19,3 +19,10 @@ C:\Users\sky\Desktop\QuanLySinhVien\BUS\obj\Debug\BUS.Properties.Resources.resou
 C:\Users\sky\Desktop\QuanLySinhVien\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
 C:\Users\sky\Desktop\QuanLySinhVien\BUS\obj\Debug\BUS.dll
 C:\Users\sky\Desktop\QuanLySinhVien\BUS\obj\Debug\BUS.pdb
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BIN\BUS.dll
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BIN\BUS.pdb
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BUS\obj\Debug\BUS.Properties.Resources.resources
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BUS\obj\Debug\BUS.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BUS\obj\Debug\BUS.dll
+C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\BUS\obj\Debug\BUS.pdb
