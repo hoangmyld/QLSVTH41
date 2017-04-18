@@ -55,6 +55,7 @@
     <Compile Include="MonHocBus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinhVien1BUS.cs" />
+    <Compile Include="SV_LH2BUS.cs" />
     <Compile Include="SV_LHBus.cs" />
     <Compile Include="SV_MHBus.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

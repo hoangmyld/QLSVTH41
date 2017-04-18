@@ -29,3 +29,10 @@ C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.csp
 C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.dll
 C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.pdb
 C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\quangtran\QLSVTH41\QuanLySinhVien\BIN\DTO.dll
+C:\Users\PC\Desktop\quangtran\QLSVTH41\QuanLySinhVien\BIN\DTO.pdb
+C:\Users\PC\Desktop\quangtran\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\PC\Desktop\quangtran\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.Properties.Resources.resources
+C:\Users\PC\Desktop\quangtran\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.csproj.GenerateResource.Cache
+C:\Users\PC\Desktop\quangtran\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.dll
+C:\Users\PC\Desktop\quangtran\QLSVTH41\QuanLySinhVien\DTO\obj\Debug\DTO.pdb

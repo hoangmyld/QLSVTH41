@@ -56,6 +56,7 @@
     <Compile Include="MonHocDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinhVien1DAO.cs" />
+    <Compile Include="SV_LH2DAO.cs" />
     <Compile Include="SV_LHDAO.cs" />
     <Compile Include="SV_MHDAO.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
