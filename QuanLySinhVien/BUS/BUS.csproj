@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChuyennganhBUS.cs" />
+    <Compile Include="GV_LHBUS.cs" />
+    <Compile Include="LoginBUS.cs" />
     <Compile Include="LopHocBus.cs" />
     <Compile Include="MonHocBus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

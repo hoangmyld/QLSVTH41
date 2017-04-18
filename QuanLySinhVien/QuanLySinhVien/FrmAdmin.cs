@@ -22,6 +22,26 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+         public List<GV_LH> GetGV_LH()
+        {
+            try
+            {
+                string sql = "select * from GV_LH";
+                
+                return new GV_LHBUS().GetGV_LH(sql);
+                }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+        }
+        public void loadGV_LH()
+        {
+            dgvGV_LH.DataSource = GetGV_LH();
+        }
         public List<Chuyennganh> getchuyennganh()
         {
             try
@@ -149,6 +169,7 @@ namespace QuanLySinhVien
             loadSV_MH();
             loadSV_LH();
             loadCN();
+            loadGV_LH();
         }
 
 
@@ -624,6 +645,85 @@ namespace QuanLySinhVien
             txtmnganh.Clear();
             txttennganh.Clear();
             loadCN();
+        }
+
+   
+        private void button13_Click(object sender, EventArgs e)
+        {
+            int magv;
+            string malop;
+          
+            magv = int.Parse(txtgv.Text.Trim());
+            malop = txtlh.Text.Trim();
+           
+
+            GV_LH sh = new GV_LH(magv, malop);
+
+            try
+            {
+                int i = new GV_LHBUS().ThemGV_LH(sh);
+                if (i == -2)
+                {
+                    throw new Exception();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dgvGV_LH.DataSource = GetGV_LH();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            int magv;
+            string malop;
+
+            magv = int.Parse(txtgv.Text.Trim());
+            malop = txtlh.Text.Trim();
+
+
+            GV_LH sh = new GV_LH(magv, malop);
+
+            try
+            {
+                int i = new GV_LHBUS().SuaGV_LH(sh);
+                if (i == -2)
+                {
+                    throw new Exception();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dgvGV_LH.DataSource = GetGV_LH();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            int magv;
+            string malh;
+            magv = int.Parse(txtgv.Text.Trim());
+            malh = txtlh.Text.Trim();
+            try
+            {
+                int i = new GV_LHBUS().XoaGV_LH(magv, malh);
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dgvGV_LH.DataSource = GetGV_LH();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
       
  

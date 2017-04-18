@@ -18,7 +18,7 @@ namespace DAO
             str = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
             cn = new SqlConnection(str);
         }
-public void Con()
+        public void Con()
         {
             try
             {
@@ -63,6 +63,30 @@ public void Con()
             }
             
         }
+
+        public int ExecLogin(string sql, CommandType type, List<SqlParameter> paras)
+        {
+            Con();
+            try
+            {
+                SqlCommand cm = new SqlCommand(sql, cn);
+                cm.CommandType = type;
+                if (paras != null)
+                {
+                    foreach (SqlParameter para in paras)
+                    {
+                        cm.Parameters.Add(para);
+                    }
+                }
+                cm.ExecuteNonQuery();
+                return int.Parse(cm.Parameters["@KetQua"].Value.ToString());
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
         public int ExcuteNonquery (string sql, CommandType type , List<SqlParameter> paras)
         {
             Con();
@@ -100,7 +124,6 @@ public void Con()
           
 
         }
-
     }
 }
 

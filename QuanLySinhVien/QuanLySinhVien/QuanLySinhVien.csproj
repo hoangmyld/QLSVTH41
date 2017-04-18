@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -76,6 +77,9 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudent.resx">
+      <DependentUpon>FrmStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmView.resx">
       <DependentUpon>FrmView.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -112,6 +117,24 @@
       <Project>{d9e9eca2-6e11-413e-a3cf-5f661881a596}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SX0PQZBD0,T3-theme-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SX0PQZBD0,T3-theme-background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492389620_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492389709_Remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492389683_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492389601_Search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -26,3 +26,10 @@ C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.R
 C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
 C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.dll
 C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.pdb
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\BIN\DAO.dll
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\BIN\DAO.pdb
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.Properties.Resources.resources
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.csproj.GenerateResource.Cache
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.dll
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\DAO\obj\Debug\DAO.pdb
