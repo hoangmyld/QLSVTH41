@@ -21,7 +21,14 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
+        private void txttim_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                bttim.PerformClick();
 
+            }
+        }
         private void lbhoten_Click(object sender, EventArgs e)
         {
 
@@ -31,7 +38,7 @@ namespace QuanLySinhVien
         private void bttim_Click(object sender, EventArgs e)
         {
             loadAStudent(int.Parse(txttim.Text.Trim()));
-            dgvdiemhocki.DataSource = list();
+            dgvdiemhocki.DataSource = list3();
             dgvdiemtonghop.DataSource = list2();
             
         }
@@ -61,9 +68,8 @@ namespace QuanLySinhVien
         private void FrmView_Load(object sender, EventArgs e)
         {
             loadAStudent(mssv);
-            dgvdiemhocki.DataSource = list();
-
-
+            dgvdiemhocki.DataSource = list3();
+            dgvdiemtonghop.DataSource = list2();
         }
 
         private void btthoat_Click(object sender, EventArgs e)
@@ -96,6 +102,13 @@ namespace QuanLySinhVien
             SV_MHBus mh = new SV_MHBus();
             List<SV_MH> list2 = mh.GetSV_MH(sql);
             return list2;
+        }
+        private List<SV_LH2> list3()
+        {
+            string sql = "Select SV_LH.MaLop,TenMH,DiemGK,DiemCK from SV_LH,MonHoc,LopHoc where SV_LH.MaLop=LopHoc.MaLop and LopHoc.MaMH=MonHoc.MaMH and MaSV='" + txttim.Text + "'";
+            SV_LH2BUS svlh = new SV_LH2BUS();
+            List<SV_LH2> list3 = svlh.GetSV_LH2(sql);
+            return list3;
         }
 
 
