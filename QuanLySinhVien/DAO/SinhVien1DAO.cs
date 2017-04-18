@@ -139,6 +139,8 @@ namespace DAO
                 
                 int id;
                 string LName, FName, phone, address, sex, email, facity;
+                
+                byte[] image = null;
                 SinhVien sv;
                 dr.Read();                
                     id = dr.GetInt32(0);
@@ -148,8 +150,12 @@ namespace DAO
                     address = dr.GetString(4);
                     sex = dr.GetString(5);
                     email = dr.GetString(6);
-                    facity = dr.GetString(7);                  
-                    sv = new SinhVien(id, LName, FName, phone, address, sex, email, facity);
+                    facity = dr.GetString(7);
+                    if(dr.GetValue(8) != System.DBNull.Value)
+                    {
+                        image = (byte[])dr.GetValue(8);
+                    }
+                    sv = new SinhVien(id, LName, FName, phone, address, sex, email, facity, image);
                 
                 return sv;
             }

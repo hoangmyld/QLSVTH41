@@ -625,6 +625,11 @@ namespace QuanLySinhVien
             txttennganh.Clear();
             loadCN();
         }
+
+        private void txtmnganh_TextChanged(object sender, EventArgs e)
+        {
+
+        }
       
  
     } 

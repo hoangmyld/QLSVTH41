@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing.Imaging;
+using System.IO;
+using Microsoft.Reporting.WinForms;
 
 
 using DTO;
@@ -31,7 +34,7 @@ namespace QuanLySinhVien
         private void bttim_Click(object sender, EventArgs e)
         {
             loadAStudent(int.Parse(txttim.Text.Trim()));
-            dgvdiemhocki.DataSource = list();
+            dgvdiemhocki.DataSource = list3();
             dgvdiemtonghop.DataSource = list2();
             
         }
@@ -49,9 +52,15 @@ namespace QuanLySinhVien
                 lbemail.Text = sv.Email;
                 lbgt.Text = sv.GioiTinh;
                 lbmanganh.Text = sv.MaNganh;
-
+                pictureBox1.Image = null;
+                if(sv.HinhSV != null)
+                {
+                    MemoryStream ms = new MemoryStream(sv.HinhSV);
+                    pictureBox1.Image = Image.FromStream(ms);
+                }
+                
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 MessageBox.Show("Nhap sai ma so sinh vien");
@@ -84,15 +93,15 @@ namespace QuanLySinhVien
 	            }
 
             }*/
-    
-       
+
+
 
         private void FrmView_Load(object sender, EventArgs e)
         {
             loadAStudent(mssv);
-            dgvdiemhocki.DataSource = list();
-          
-           
+            dgvdiemhocki.DataSource = list3();
+            dgvdiemtonghop.DataSource = list2();
+
         }
 
         private void btthoat_Click(object sender, EventArgs e)
@@ -145,24 +154,18 @@ namespace QuanLySinhVien
             List<SV_MH> list2 = mh.GetSV_MH(sql);
             return list2;
          }
-        public List<MonHoc> GetMonHoc()
+       
+        private List<SV_LH2> list3()
         {
-            try
-            {
-                string sql = "select TenMH from MonHoc,SV_LH whereSV_LH.MaSV='" + txttim.Text + "'";
-                MonHocBus cn = new MonHocBus();
-                return cn.GetMH(sql);
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-
-
+            string sql ="Select SV_LH.MaLop,TenMH,DiemGK,DiemCK from SV_LH,MonHoc,LopHoc where SV_LH.MaLop=LopHoc.MaLop and LopHoc.MaMH=MonHoc.MaMH and MaSV='"+txttim.Text+"'";
+            SV_LH2BUS svlh = new SV_LH2BUS();
+            List<SV_LH2> list3 = svlh.GetSV_LH2(sql);
+            return list3 ;
+        }
+        
         }
        
    
     }
     
-}
+

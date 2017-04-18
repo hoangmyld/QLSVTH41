@@ -1146,6 +1146,7 @@
             // 
             // tabPage8
             // 
+            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.tabPage8.Controls.Add(this.label41);
             this.tabPage8.Controls.Add(this.label40);
             this.tabPage8.Controls.Add(this.txttennganh);
@@ -1161,13 +1162,12 @@
             this.tabPage8.Size = new System.Drawing.Size(787, 481);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "QL_Mã Ngành";
-            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // label41
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(159, 57);
+            this.label41.Location = new System.Drawing.Point(313, 48);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(112, 24);
             this.label41.TabIndex = 8;
@@ -1176,7 +1176,7 @@
             // label40
             // 
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(7, 57);
+            this.label40.Location = new System.Drawing.Point(17, 48);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(111, 35);
             this.label40.TabIndex = 7;
@@ -1185,20 +1185,21 @@
             // txttennganh
             // 
             this.txttennganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttennganh.Location = new System.Drawing.Point(163, 104);
+            this.txttennganh.Location = new System.Drawing.Point(431, 47);
             this.txttennganh.Multiline = true;
             this.txttennganh.Name = "txttennganh";
-            this.txttennganh.Size = new System.Drawing.Size(83, 26);
+            this.txttennganh.Size = new System.Drawing.Size(234, 26);
             this.txttennganh.TabIndex = 6;
             // 
             // txtmnganh
             // 
             this.txtmnganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmnganh.Location = new System.Drawing.Point(11, 105);
+            this.txtmnganh.Location = new System.Drawing.Point(134, 48);
             this.txtmnganh.Multiline = true;
             this.txtmnganh.Name = "txtmnganh";
-            this.txtmnganh.Size = new System.Drawing.Size(81, 25);
+            this.txtmnganh.Size = new System.Drawing.Size(107, 25);
             this.txtmnganh.TabIndex = 5;
+            this.txtmnganh.TextChanged += new System.EventHandler(this.txtmnganh_TextChanged);
             // 
             // label39
             // 
@@ -1213,7 +1214,7 @@
             // btsuacn
             // 
             this.btsuacn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btsuacn.Location = new System.Drawing.Point(353, 217);
+            this.btsuacn.Location = new System.Drawing.Point(328, 99);
             this.btsuacn.Name = "btsuacn";
             this.btsuacn.Size = new System.Drawing.Size(120, 40);
             this.btsuacn.TabIndex = 3;
@@ -1224,7 +1225,7 @@
             // btxoacn
             // 
             this.btxoacn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btxoacn.Location = new System.Drawing.Point(353, 293);
+            this.btxoacn.Location = new System.Drawing.Point(567, 97);
             this.btxoacn.Name = "btxoacn";
             this.btxoacn.Size = new System.Drawing.Size(120, 40);
             this.btxoacn.TabIndex = 2;
@@ -1235,7 +1236,7 @@
             // btaddcn
             // 
             this.btaddcn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btaddcn.Location = new System.Drawing.Point(353, 145);
+            this.btaddcn.Location = new System.Drawing.Point(60, 99);
             this.btaddcn.Name = "btaddcn";
             this.btaddcn.Size = new System.Drawing.Size(120, 40);
             this.btaddcn.TabIndex = 1;
@@ -1245,10 +1246,11 @@
             // 
             // dgvcn
             // 
+            this.dgvcn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dgvcn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvcn.Location = new System.Drawing.Point(0, 145);
             this.dgvcn.Name = "dgvcn";
-            this.dgvcn.Size = new System.Drawing.Size(313, 330);
+            this.dgvcn.Size = new System.Drawing.Size(734, 330);
             this.dgvcn.TabIndex = 0;
             // 
             // FrmAdmin
