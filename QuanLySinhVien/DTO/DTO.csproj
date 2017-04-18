@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chuyennganh.cs" />
+    <Compile Include="GV_LH.cs" />
     <Compile Include="LopHoc.cs" />
     <Compile Include="MonHoc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

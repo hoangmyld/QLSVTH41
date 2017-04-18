@@ -65,3 +65,21 @@ C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanL
 C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmView.resources
 C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
 C:\Users\PC\Desktop\quang\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\BUS.dll
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\DTO.dll
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\DAO.dll
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\BUS.pdb
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\DTO.pdb
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\bin\Debug\DAO.pdb
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojResolveAssemblyReference.cache
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmAdmin.resources
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmView.resources
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.Cache
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmStudent.resources
+C:\Users\TjeuBao\Desktop\BT LTCSDL\QLSVTH41\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.FrmLogin.resources
