@@ -117,7 +117,8 @@ namespace QuanLySinhVien
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
-            } 
+            }
+         
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -161,6 +162,20 @@ namespace QuanLySinhVien
             SV_LH2BUS svlh = new SV_LH2BUS();
             List<SV_LH2> list3 = svlh.GetSV_LH2(sql);
             return list3 ;
+        }
+
+        private void txttim_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txttim_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode==Keys.Enter)
+            {
+                bttim.PerformClick();
+
+            }
         }
         
         }

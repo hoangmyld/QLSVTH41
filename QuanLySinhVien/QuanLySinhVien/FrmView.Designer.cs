@@ -37,19 +37,19 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvdiemhocki = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.lbhoten = new System.Windows.Forms.Label();
-            this.lbsdt = new System.Windows.Forms.Label();
-            this.lbdc = new System.Windows.Forms.Label();
-            this.lbgt = new System.Windows.Forms.Label();
-            this.lbemail = new System.Windows.Forms.Label();
-            this.lbmanganh = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbmanganh = new System.Windows.Forms.Label();
+            this.lbemail = new System.Windows.Forms.Label();
+            this.lbgt = new System.Windows.Forms.Label();
+            this.lbdc = new System.Windows.Forms.Label();
+            this.lbsdt = new System.Windows.Forms.Label();
+            this.lbhoten = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdiemtonghop)).BeginInit();
@@ -79,6 +79,8 @@
             this.txttim.Name = "txttim";
             this.txttim.Size = new System.Drawing.Size(134, 34);
             this.txttim.TabIndex = 2;
+            this.txttim.Enter += new System.EventHandler(this.txttim_Enter);
+            this.txttim.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txttim_KeyDown);
             this.txttim.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttim_KeyPress);
             // 
             // btthoat
@@ -115,6 +117,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
             this.tabPage2.Controls.Add(this.dgvdiemhocki);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
@@ -128,9 +131,9 @@
             // 
             this.dgvdiemhocki.BackgroundColor = System.Drawing.Color.White;
             this.dgvdiemhocki.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdiemhocki.Location = new System.Drawing.Point(6, 6);
+            this.dgvdiemhocki.Location = new System.Drawing.Point(6, 212);
             this.dgvdiemhocki.Name = "dgvdiemhocki";
-            this.dgvdiemhocki.Size = new System.Drawing.Size(604, 229);
+            this.dgvdiemhocki.Size = new System.Drawing.Size(604, 280);
             this.dgvdiemhocki.TabIndex = 10;
             // 
             // tabPage1
@@ -157,57 +160,61 @@
             this.tabPage1.Text = "Xem thông tin sinh viên";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // lbhoten
+            // pictureBox1
             // 
-            this.lbhoten.BackColor = System.Drawing.Color.White;
-            this.lbhoten.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbhoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbhoten.Location = new System.Drawing.Point(458, 40);
-            this.lbhoten.Name = "lbhoten";
-            this.lbhoten.Size = new System.Drawing.Size(149, 41);
-            this.lbhoten.TabIndex = 0;
-            this.lbhoten.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbhoten.Click += new System.EventHandler(this.lbhoten_Click);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 126);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(209, 232);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
-            // lbsdt
+            // label6
             // 
-            this.lbsdt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbsdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbsdt.Location = new System.Drawing.Point(458, 104);
-            this.lbsdt.Name = "lbsdt";
-            this.lbsdt.Size = new System.Drawing.Size(149, 41);
-            this.lbsdt.TabIndex = 1;
-            this.lbsdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Location = new System.Drawing.Point(360, 419);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 49);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Mã ngành";
             // 
-            // lbdc
+            // label5
             // 
-            this.lbdc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdc.Location = new System.Drawing.Point(458, 174);
-            this.lbdc.Name = "lbdc";
-            this.lbdc.Size = new System.Drawing.Size(149, 42);
-            this.lbdc.TabIndex = 2;
-            this.lbdc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Location = new System.Drawing.Point(360, 355);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 36);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Email";
             // 
-            // lbgt
+            // label4
             // 
-            this.lbgt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbgt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbgt.Location = new System.Drawing.Point(458, 270);
-            this.lbgt.Name = "lbgt";
-            this.lbgt.Size = new System.Drawing.Size(149, 41);
-            this.lbgt.TabIndex = 3;
-            this.lbgt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Location = new System.Drawing.Point(360, 270);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 30);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Giới tính";
             // 
-            // lbemail
+            // label3
             // 
-            this.lbemail.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lbemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbemail.Location = new System.Drawing.Point(458, 350);
-            this.lbemail.Name = "lbemail";
-            this.lbemail.Size = new System.Drawing.Size(149, 41);
-            this.lbemail.TabIndex = 4;
-            this.lbemail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Location = new System.Drawing.Point(360, 174);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 49);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Địa chỉ";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(360, 104);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 41);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Số điện thoại";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(360, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 46);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Họ và tên";
             // 
             // lbmanganh
             // 
@@ -219,61 +226,57 @@
             this.lbmanganh.TabIndex = 5;
             this.lbmanganh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lbemail
             // 
-            this.label1.Location = new System.Drawing.Point(360, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 46);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Họ và tên";
+            this.lbemail.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbemail.Location = new System.Drawing.Point(458, 350);
+            this.lbemail.Name = "lbemail";
+            this.lbemail.Size = new System.Drawing.Size(149, 41);
+            this.lbemail.TabIndex = 4;
+            this.lbemail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lbgt
             // 
-            this.label2.Location = new System.Drawing.Point(360, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 41);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Số điện thoại";
+            this.lbgt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbgt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbgt.Location = new System.Drawing.Point(458, 270);
+            this.lbgt.Name = "lbgt";
+            this.lbgt.Size = new System.Drawing.Size(149, 41);
+            this.lbgt.TabIndex = 3;
+            this.lbgt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lbdc
             // 
-            this.label3.Location = new System.Drawing.Point(360, 174);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 49);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Địa chỉ";
+            this.lbdc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdc.Location = new System.Drawing.Point(458, 174);
+            this.lbdc.Name = "lbdc";
+            this.lbdc.Size = new System.Drawing.Size(149, 42);
+            this.lbdc.TabIndex = 2;
+            this.lbdc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lbsdt
             // 
-            this.label4.Location = new System.Drawing.Point(360, 270);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 30);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Giới tính";
+            this.lbsdt.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbsdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbsdt.Location = new System.Drawing.Point(458, 104);
+            this.lbsdt.Name = "lbsdt";
+            this.lbsdt.Size = new System.Drawing.Size(149, 41);
+            this.lbsdt.TabIndex = 1;
+            this.lbsdt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lbhoten
             // 
-            this.label5.Location = new System.Drawing.Point(360, 355);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 36);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Email";
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(360, 419);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 49);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Mã ngành";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 68);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 232);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.lbhoten.BackColor = System.Drawing.Color.White;
+            this.lbhoten.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbhoten.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbhoten.Location = new System.Drawing.Point(458, 40);
+            this.lbhoten.Name = "lbhoten";
+            this.lbhoten.Size = new System.Drawing.Size(149, 41);
+            this.lbhoten.TabIndex = 0;
+            this.lbhoten.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbhoten.Click += new System.EventHandler(this.lbhoten_Click);
             // 
             // tabControl1
             // 

@@ -1246,7 +1246,7 @@
             // 
             // dgvcn
             // 
-            this.dgvcn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dgvcn.BackgroundColor = System.Drawing.Color.White;
             this.dgvcn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvcn.Location = new System.Drawing.Point(0, 145);
             this.dgvcn.Name = "dgvcn";
