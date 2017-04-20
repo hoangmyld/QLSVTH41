@@ -32,8 +32,11 @@
             this.bttim = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btthoat = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txttim = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,9 +51,6 @@
             this.dgvdiemhocki = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvdiemtonghop = new System.Windows.Forms.DataGridView();
-            this.txttim = new System.Windows.Forms.TextBox();
-            this.btthoat = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -111,6 +111,32 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Xem thông tin sinh viên";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
+            // 
+            // btthoat
+            // 
+            this.btthoat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btthoat.Location = new System.Drawing.Point(570, 328);
+            this.btthoat.Name = "btthoat";
+            this.btthoat.Size = new System.Drawing.Size(106, 57);
+            this.btthoat.TabIndex = 3;
+            this.btthoat.Text = "Thoát";
+            this.btthoat.UseVisualStyleBackColor = true;
+            this.btthoat.Click += new System.EventHandler(this.btthoat_Click);
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(567, 131);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(127, 15);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Tìm kiếm sinh viên";
             // 
             // label6
             // 
@@ -129,6 +155,18 @@
             this.label5.Size = new System.Drawing.Size(80, 36);
             this.label5.TabIndex = 10;
             this.label5.Text = "Email";
+            // 
+            // txttim
+            // 
+            this.txttim.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txttim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttim.Location = new System.Drawing.Point(570, 35);
+            this.txttim.MaxLength = 4;
+            this.txttim.Multiline = true;
+            this.txttim.Name = "txttim";
+            this.txttim.Size = new System.Drawing.Size(134, 34);
+            this.txttim.TabIndex = 1;
+            this.txttim.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttim_KeyPress);
             // 
             // label4
             // 
@@ -275,42 +313,6 @@
             this.dgvdiemtonghop.Name = "dgvdiemtonghop";
             this.dgvdiemtonghop.Size = new System.Drawing.Size(782, 491);
             this.dgvdiemtonghop.TabIndex = 0;
-            // 
-            // txttim
-            // 
-            this.txttim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txttim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttim.Location = new System.Drawing.Point(570, 35);
-            this.txttim.MaxLength = 4;
-            this.txttim.Multiline = true;
-            this.txttim.Name = "txttim";
-            this.txttim.Size = new System.Drawing.Size(134, 34);
-            this.txttim.TabIndex = 1;
-            this.txttim.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttim_KeyPress);
-            // 
-            // btthoat
-            // 
-            this.btthoat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btthoat.Location = new System.Drawing.Point(570, 328);
-            this.btthoat.Name = "btthoat";
-            this.btthoat.Size = new System.Drawing.Size(106, 57);
-            this.btthoat.TabIndex = 3;
-            this.btthoat.Text = "Thoát";
-            this.btthoat.UseVisualStyleBackColor = true;
-            this.btthoat.Click += new System.EventHandler(this.btthoat_Click);
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(567, 131);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 15);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Tìm kiếm sinh viên";
             // 
             // FrmView
             // 

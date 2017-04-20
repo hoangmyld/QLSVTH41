@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+using System.Drawing.Imaging;
 
 using DTO;
 using BUS;
-using System.IO;
+
 
 
 namespace QuanLySinhVien
@@ -721,10 +723,252 @@ namespace QuanLySinhVien
             dgvGV_LH.DataSource = GetGV_LH();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
+      //Giang Vien
 
+        DataTable dtChuyenNganh, dtTeacher;
+        
+        private void loadTeacher()
+        {
+            try
+            {
+                dtTeacher = new GiangVienBUS().getTeacher();
+                dgvGiangVien.DataSource = dtTeacher;
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show(ex.Message);
+            }            
         }
+        private void loadChuyenNganh()
+        {
+            try
+            {
+                dtChuyenNganh = new GiangVienBUS().getChuyenNganh();
+            }
+            catch (Exception ex)
+            {                
+                MessageBox.Show(ex.Message);
+            }
+        }
+        
+        private void bindTeacher()
+        {            
+            txtMaGV_GV.DataBindings.Clear();
+            txtMaGV_GV.DataBindings.Add("Text", dtTeacher, "MaGV");
+            txtHo_GV.DataBindings.Clear();
+            txtHo_GV.DataBindings.Add("Text", dtTeacher, "Ho");
+            txtTen_GV.DataBindings.Clear();
+            txtTen_GV.DataBindings.Add("Text", dtTeacher, "Ten");
+            txtDiaChiGV.DataBindings.Clear();
+            txtDiaChiGV.DataBindings.Add("Text", dtTeacher, "DiaChi");
+            cbGioiTinhGV.DataBindings.Clear();
+            cbGioiTinhGV.DataBindings.Add("Text", dtTeacher, "GioiTinh");
+            cbMaNganh_GV.DataBindings.Clear();
+            cbMaNganh_GV.DataBindings.Add("Text", dtTeacher, "MaNganh");
+        }
+        private void tabGiangVien_Enter(object sender, EventArgs e)
+        {
+            loadTeacher();
+            loadChuyenNganh();
+            cbMaNganh_GV.DataSource = dtChuyenNganh;
+            cbMaNganh_GV.DisplayMember = "TenNganh";
+            cbMaNganh_GV.ValueMember = "MaNganh";
+            bindTeacher();
+        }
+
+        private void rdBindGV_CheckedChanged(object sender, EventArgs e)
+        {
+            bindTeacher();
+        }
+
+        private void rdNoneBindGV_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMaGV_GV.DataBindings.Clear();
+            txtMaGV_GV.Text = "";
+            txtHo_GV.DataBindings.Clear();
+            txtHo_GV.Text = "";
+            txtTen_GV.DataBindings.Clear();
+            txtTen_GV.Text = "";
+            txtDiaChiGV.DataBindings.Clear();
+            txtDiaChiGV.Text = "";
+            cbGioiTinhGV.DataBindings.Clear();
+            cbGioiTinhGV.SelectedIndex = -1;
+            cbMaNganh_GV.DataBindings.Clear();
+            cbMaNganh_GV.SelectedIndex = -1;
+        }
+        private Image ConvertToImg(byte[] arrImg) 
+        {
+            if (arrImg != null)
+            {
+                MemoryStream ms = new MemoryStream(arrImg);
+                return Image.FromStream(ms);
+            }
+            return null;
+        }
+        private byte[] ConvertToByte(Image img)
+        {
+            if (img != null) 
+            {
+                MemoryStream ms = new MemoryStream();
+                img.Save(ms, ImageFormat.Jpeg);
+                byte[] arrImg = new byte[ms.Length];
+                ms.Position = 0;
+                ms.Read(arrImg, 0, arrImg.Length);
+                return arrImg;
+            }
+            return null;
+        }
+        private void btThemGV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int MaGV = int.Parse(txtMaGV_GV.Text);
+                string Ho = txtHo_GV.Text,
+                    Ten = txtTen_GV.Text,
+                    DiaChi = txtDiaChiGV.Text,
+                    GioiTinh = cbGioiTinhGV.Text,
+                    MaNganh = cbMaNganh_GV.SelectedValue.ToString();
+                byte[] HinhGV = ConvertToByte(picGV_GV.Image);
+                GiangVien gv = new GiangVien(MaGV, Ho, Ten, DiaChi, GioiTinh, MaNganh, HinhGV);
+                int kq = new GiangVienBUS().insertTeacher(gv);
+                loadTeacher();
+                picGV_GV.Image = null;
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btHinhGV_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Choose Image(*.jpg; *.png; *.gif)|*.jpg; *.png; *.gif";
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                picGV_GV.Image = Image.FromFile(opf.FileName);
+            }
+        }
+
+        private void btXoaGV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int i = new GiangVienBUS().deleteTeacher(int.Parse(txtMaGV_GV.Text));
+                loadTeacher();
+                bindTeacher();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Ma Giao Vien bạn nhập vào không hợp lệ!");
+            }
+            catch (Exception ex)
+            {                
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btSuaGV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int MaGV = int.Parse(txtMaGV_GV.Text);
+                string Ho = txtHo_GV.Text,
+                    Ten = txtTen_GV.Text,
+                    DiaChi = txtDiaChiGV.Text,
+                    GioiTinh = cbGioiTinhGV.Text,
+                    MaNganh = cbMaNganh_GV.SelectedValue.ToString();
+                byte[] HinhGV = ConvertToByte(picGV_GV.Image);
+                GiangVien gv = new GiangVien(MaGV, Ho, Ten, DiaChi, GioiTinh, MaNganh, HinhGV);
+                int kq = new GiangVienBUS().updateTeacher(gv);
+                loadTeacher();
+                picGV_GV.Image = null;
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void cbMaNganh_GV_TextChanged(object sender, EventArgs e)
+        {
+            DataRow dr = dtChuyenNganh.Rows.Find(cbMaNganh_GV.Text);
+            if (dr != null)
+            {
+                if (dr["MaNganh"].ToString() == cbMaNganh_GV.Text)
+                {
+                    cbMaNganh_GV.SelectedValue = dr["MaNganh"].ToString();
+                }
+            }
+        }
+
+        private void btSearchGV_Click(object sender, EventArgs e)
+        {
+            if (rdNoneBindGV.Checked)
+            {
+                try
+                {
+                    string sql = @"select * from GiangVien where ";
+                    if (txtMaGV_GV.Text != "") { sql += String.Format(@"MaGV = {0} ", txtMaGV_GV.Text); } else sql += @"null is null ";
+                    if (txtHo_GV.Text != "") { sql += String.Format(@"and Ho = N'{0}' ", txtHo_GV.Text); } else sql += @"and null is null ";
+                    if (txtTen_GV.Text != "") { sql += String.Format(@"and Ten = N'{0}' ", txtTen_GV.Text); } else sql += @"and null is null ";
+                    if (txtDiaChiGV.Text != "") { sql += String.Format(@"and DiaChi = N'{0}' ", txtDiaChiGV.Text); } else sql += @"and null is null ";
+                    if (cbGioiTinhGV.SelectedIndex != -1) { sql += String.Format(@"and GioiTinh = N'{0}' ", cbGioiTinhGV.Text); } else sql += @"and null is null ";
+                    if (cbMaNganh_GV.SelectedIndex != -1) { sql += String.Format(@"and MaNganh = N'{0}' ", cbMaNganh_GV.SelectedValue.ToString()); } else sql += @"and null is null ";
+                    dtTeacher = null;
+                   
+                    dtTeacher = new GiangVienBUS().searchGV(sql);
+                    dgvGiangVien.DataSource = dtTeacher;
+                    //bindTeacher();
+                }
+                catch (Exception ex)
+                {
+                    
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else MessageBox.Show("Bạn chỉ có thể sử dụng chức năng này khi tắt chức năng binding!");
+        }
+
+        private void btLoadGV_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtMaGV_GV.Text != "")
+                {
+                    DataRow dr = dtTeacher.Rows.Find(int.Parse(txtMaGV_GV.Text));
+                    if (dr != null && dr["HinhGV"] != System.DBNull.Value)
+                    {
+                        picGV_GV.Image = ConvertToImg((byte[])dr["HinhGV"]);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                
+                MessageBox.Show("Hình ảnh cần load chứa giá trị null");
+            }
+            
+                
+        }
+
+        private void btRefreshGV_Click(object sender, EventArgs e)
+        {
+            loadTeacher();
+            loadChuyenNganh();
+            cbMaNganh_GV.DataSource = dtChuyenNganh;
+            cbMaNganh_GV.DisplayMember = "TenNganh";
+            cbMaNganh_GV.ValueMember = "MaNganh";
+            bindTeacher();
+            rdBindGV.Checked = true;
+        }
+
+      
+
+       
       
  
     } 

@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="ChuyennganhDAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="DichVuSVDAO.cs" />
+    <Compile Include="GiangVienDAO.cs" />
     <Compile Include="GV_LHDAO.cs" />
     <Compile Include="LoginDAO.cs" />
     <Compile Include="LopHocDao.cs" />

@@ -17,7 +17,7 @@ namespace QuanLySinhVien
         {
             InitializeComponent();
         }
-
+        public int MSSV;
         private void FrmLogin_Load(object sender, EventArgs e)
         {
 
@@ -27,17 +27,21 @@ namespace QuanLySinhVien
         {
             try
             {
+                
                 if (Login() == 1)
                 {
                     MessageBox.Show("Đăng nhập thành công");
                     if (rdView.Checked == true)
                     {
                         FrmView f = new FrmView();
+                        MSSV = int.Parse(txtID.Text);
+                        f.FormClosed += new FormClosedEventHandler(f_FormClosed);
                         f.Show();
                     }
                     else if (rdStudent.Checked == true)
                     {
                         FrmStudent f = new FrmStudent();
+                        MSSV = int.Parse(txtID.Text);
                         f.FormClosed += new FormClosedEventHandler(f_FormClosed);
                         f.Show();
                     }
@@ -50,8 +54,7 @@ namespace QuanLySinhVien
 
                     this.Hide();
                 }
-                else if (Login() == 0)
-                    MessageBox.Show("Đăng nhập thất bại");
+                else MessageBox.Show("Đăng nhập thất bại");
 
             }
             catch (Exception ex)

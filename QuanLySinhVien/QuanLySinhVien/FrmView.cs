@@ -33,8 +33,9 @@ namespace QuanLySinhVien
         {
 
         }
-        int mssv = 1001;
-        int ms = 1002;
+        public int mssv;
+        public FrmLogin fmlogin;
+        //int ms = 1002;
         private void bttim_Click(object sender, EventArgs e)
         {
             loadAStudent(int.Parse(txttim.Text.Trim()));
@@ -67,7 +68,7 @@ namespace QuanLySinhVien
         }
         private void FrmView_Load(object sender, EventArgs e)
         {
-            loadAStudent(mssv);
+            mssv = fmlogin.MSSV;            
             dgvdiemhocki.DataSource = list3();
             dgvdiemtonghop.DataSource = list2();
         }
@@ -109,6 +110,19 @@ namespace QuanLySinhVien
             SV_LH2BUS svlh = new SV_LH2BUS();
             List<SV_LH2> list3 = svlh.GetSV_LH2(sql);
             return list3;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Enter(object sender, EventArgs e)
+        {
+            loadAStudent(int.Parse(txttim.Text.Trim()));
+            dgvdiemhocki.DataSource = list3();
+            dgvdiemtonghop.DataSource = list2();
+
         }
 
 

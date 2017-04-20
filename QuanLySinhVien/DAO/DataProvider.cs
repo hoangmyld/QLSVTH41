@@ -13,6 +13,7 @@ namespace DAO
     {
         string str;
         SqlConnection cn;
+
         public DataProvider()
         {
             str = ConfigurationManager.ConnectionStrings["cnStr"].ConnectionString;
@@ -29,7 +30,7 @@ namespace DAO
             }
             catch (SqlException ex)
             {
-                
+
                 throw ex;
             }
         }
@@ -58,10 +59,10 @@ namespace DAO
             }
             catch (SqlException ex)
             {
-                
+
                 throw ex;
             }
-            
+
         }
 
         public int ExecLogin(string sql, CommandType type, List<SqlParameter> paras)
@@ -87,43 +88,108 @@ namespace DAO
                 throw ex;
             }
         }
-        public int ExcuteNonquery (string sql, CommandType type , List<SqlParameter> paras)
+        public int ExcuteNonquery(string sql, CommandType type, List<SqlParameter> paras)
         {
             Con();
-            try 
-	        {	        
-		          SqlCommand cm = new SqlCommand (sql,cn);
-                  cm.CommandType = type;
-                if(paras != null)
+            try
+            {
+                SqlCommand cm = new SqlCommand(sql, cn);
+                cm.CommandType = type;
+                if (paras != null)
                     foreach (SqlParameter para in paras)
                     {
                         cm.Parameters.Add(para);
                     }
-             
-                  cm.ExecuteNonQuery();
-                  return 1;
+
+                cm.ExecuteNonQuery();
+                return 1;
             }
-	        catch (Exception ex)
-	        {
-		
-		        throw ex;
-	        }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
             finally
             {
                 disCon();
-            }             
+            }
         }
-      public  int ExecTest(string sql)
+        public int ExecTest(string sql)
         {
             Con();
-            SqlCommand cm = new SqlCommand(sql,cn);
+            SqlCommand cm = new SqlCommand(sql, cn);
             cm.CommandType = CommandType.Text;
             cm.ExecuteNonQuery();
             disCon();
             return 1;
-          
 
+
+        }
+        //Phi ket noi
+        public DataTable InitDTTable(SqlDataAdapter da)
+        {
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dt.PrimaryKey = new DataColumn[] { dt.Columns[0] };
+            return dt;
+        }
+        public DataTable getDataTable(string sql)
+        {
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+            DataTable dt = InitDTTable(da);
+            return dt;
+        }
+        public int UpdateTable(string sql, List<SqlParameter> paras)
+        {
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+            DataTable dt = InitDTTable(da);
+            DataRow dr = dt.Rows.Find(paras[0].Value);
+            if (dr == null) { return 0; }
+            int i = 1;
+            foreach (SqlParameter para in paras)
+            {
+                if (para != paras[0])
+                {
+                    dr[i++] = para.Value;
+                }
+            }
+            SqlCommandBuilder cb = new SqlCommandBuilder(da);
+            da.Update(dt);
+            return 1;
+        }
+        public int InsertTable(string sql, List<SqlParameter> paras)
+        {
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+            DataTable dt = InitDTTable(da);
+            da.Fill(dt);
+            DataRow dr = dt.Rows.Find(paras[0].Value);
+            if (dr != null)
+                return 0;
+            else dr = dt.NewRow();
+            int i = 0;
+            foreach (SqlParameter para in paras)
+            {
+                dr[i++] = para.Value;
+            }
+            dt.Rows.Add(dr);
+            SqlCommandBuilder db = new SqlCommandBuilder(da);
+            da.Update(dt);
+            return 1;
+        }
+        public int DeleteTeacher(int maGV)
+        {
+            string sql = @"select * from GiangVien";
+            SqlDataAdapter da = new SqlDataAdapter(sql, cn);
+            DataTable dt = InitDTTable(da);            
+            DataRow dr = dt.Rows.Find(maGV);
+            if (dr == null) return 0;
+            dr.Delete();
+            SqlCommandBuilder cb = new SqlCommandBuilder(da);
+            da.Update(dt);
+            return 1;
         }
     }
 }
+
 

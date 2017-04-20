@@ -97,7 +97,6 @@
             this.rdQTV.Name = "rdQTV";
             this.rdQTV.Size = new System.Drawing.Size(123, 24);
             this.rdQTV.TabIndex = 4;
-            this.rdQTV.TabStop = true;
             this.rdQTV.Text = "Quản Trị Viên";
             this.rdQTV.UseVisualStyleBackColor = false;
             this.rdQTV.CheckedChanged += new System.EventHandler(this.rdQTV_CheckedChanged);
@@ -111,7 +110,6 @@
             this.rdStudent.Name = "rdStudent";
             this.rdStudent.Size = new System.Drawing.Size(95, 24);
             this.rdStudent.TabIndex = 3;
-            this.rdStudent.TabStop = true;
             this.rdStudent.Text = "Sinh Viên";
             this.rdStudent.UseVisualStyleBackColor = false;
             this.rdStudent.CheckedChanged += new System.EventHandler(this.rdStudent_CheckedChanged);
@@ -121,6 +119,7 @@
             this.rdView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rdView.AutoSize = true;
             this.rdView.BackColor = System.Drawing.Color.Transparent;
+            this.rdView.Checked = true;
             this.rdView.Location = new System.Drawing.Point(101, 275);
             this.rdView.Name = "rdView";
             this.rdView.Size = new System.Drawing.Size(126, 24);

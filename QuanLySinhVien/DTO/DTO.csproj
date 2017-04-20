@@ -48,7 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chuyennganh.cs" />
+    <Compile Include="DangKi.cs" />
+    <Compile Include="GiangVien.cs" />
     <Compile Include="GV_LH.cs" />
+    <Compile Include="HienThi.cs" />
     <Compile Include="LopHoc.cs" />
     <Compile Include="MonHoc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
